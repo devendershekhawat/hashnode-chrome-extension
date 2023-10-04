@@ -1,11 +1,9 @@
-# ReactJS Chrome Extension
+# Hashnode chrome extension
 
-## React 18 and TailwindCSS Supported
+## How to test
 
-- [x] Webpack Compatible
-- [x] TailwindCSS 3.0 Compatible
-
-Subscribe to my youtube channel
-https://bit.ly/manshu
-
-<a href="https://www.buymeacoffee.com/batraio" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+- Run `pnpm install`
+- Run `pnpm run build`
+- Go to manage extensions page on chrome and turn on developer mode
+- Click on `Load Unpacked` and select the dist directory of the project
+- Open new tab
