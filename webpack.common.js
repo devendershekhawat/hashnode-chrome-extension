@@ -7,8 +7,6 @@ const autoprefixer = require('autoprefixer')
 
 module.exports = {
     entry: {
-        popup: path.resolve('src/popup/index.tsx'),
-        options: path.resolve('src/options/index.tsx'),
         background: path.resolve('src/background/background.ts'),
         contentScript: path.resolve('src/contentScript/contentScript.ts'),
         newTab: path.resolve('src/tabs/index.tsx'),
@@ -58,8 +56,6 @@ module.exports = {
             }]
         }),
         ...getHtmlPlugins([
-            'popup',
-            'options',
             'newTab'
         ])
     ],
@@ -79,7 +75,7 @@ module.exports = {
 
 function getHtmlPlugins(chunks) {
     return chunks.map(chunk => new HtmlPlugin({
-        title: 'React Extension',
+        title: 'Hashnode | Rix',
         filename: `${chunk}.html`,
         chunks: [chunk]
     }))
