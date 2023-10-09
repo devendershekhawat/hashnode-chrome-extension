@@ -311,7 +311,7 @@ export function RixSearch() {
                                 <a
                                     key={q}
                                     className="block py-2.5 px-4 font-medium text-sm text-blue-600 rounded-full hover:bg-blue-200 dark:text-blue-400 dark:hover:bg-[#172554] dark:hover:text-blue-300"
-                                    href={`/rix/search?q=${q}`}
+                                    href={`https://hashnode.com/rix/search?q=${q}`}
                                     >
                                     {q}
                                 </a>  
